@@ -1,0 +1,29 @@
+body , html{
+    height: 100%;
+}
+.bg-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.write{
+    color: white;
+}
+.p-2{
+    height: 200px;
+    width: 350px;
+}
+.font{
+    font-family: monospace;
+    font-size: 50px;
+}
+.fnt{
+    font-family: inherit;
+    font-size: 20px;
+}
+.parallax{
+    background-attachment: fixed;
+}
+button.prohvr:hover, button.prohvr:active{
+    
+}

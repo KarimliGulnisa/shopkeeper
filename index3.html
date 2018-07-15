@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>homework20</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="left" onclick="changeImage(0)">sol</div>
+            <div class="img">
+                <img id = "img" src="2.jpg" alt="">
+            </div>
+            <div class="right" onclick="changeImage(1)">sag</div>
+        </div>
+        
+        <script>
+            
+            
+            var index = 0;
+             var gallery = ["2.jpg" , "3.jpg", "4.jpg", "5.jpeg"];
+            function changeImage(direction)
+            {
+                //0 - sol,, 1 - sag           
+                if(direction == 0){
+                    index--;
+                }
+                else {
+                    index ++;
+                }
+                
+                if(index >= gallery.length){
+                    index = 0;
+                }
+                else if(index < 0){
+                    index = gallery.length - 1;
+                }
+                setImageIndex(index);
+            }
+            function setImageIndex(i)
+            {
+                var img = document.getElementById("img");
+                img.setAttribute("src", gallery[i]);
+            }
+        </script>
+    </body>
+</html>
